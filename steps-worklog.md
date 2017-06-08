@@ -1,6 +1,6 @@
 Current working Goal:
 
-Nginx proxy to node setup, fallback nginx file
+Nginx proxy to node setup in compose
 
 ---
 Let's just get a basic nginx container running.
