@@ -6,3 +6,8 @@ services:
     image: nginxproxy
     ports:
       - 80:80
+  node:
+    build: ./node
+    image: nodevoting
+    ports:
+      - 3000:3000

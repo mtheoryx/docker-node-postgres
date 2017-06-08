@@ -1,8 +1,6 @@
 Current working Goal:
 
-Nginx Setup
-Node Setup
-Nginx proxy to node setup
+Nginx proxy to node setup, fallback nginx file
 
 ---
 Let's just get a basic nginx container running.
