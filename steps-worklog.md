@@ -1,12 +1,15 @@
 Current working Goal:
 
-Set up and configure a postgres instance
+Postgres data fetching from node, to test comms
 
 ---
 
 - [x] nginx
 - [x] node
 - [x] proxy
-- [ ] postgres
-- [ ] initial seed data
-- [ ] Fetch from node
+- [x] postgres
+- [x] initial seed data
+- [ ] Fetch data from node
+- [ ] Set up dev/prod live reloading
+- [ ] Set up express
+- [ ] Set up static clientside app vs api proxied to node
