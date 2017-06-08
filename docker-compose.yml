@@ -11,3 +11,23 @@ services:
   node:
     build: ./node
     image: nodevoting
+    links:
+      - db
+  db:
+    build: ./postgres
+    image: votingdb
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
+    ports:
+      - 127.0.0.1:5432:5432
+    secrets:
+      - psql_user
+      - psql_password
+    environment:
+      POSTGRES_USER_FILE: /run/secrets/psql_user
+      POSTGRES_PASSWORD_FILE: /run/secrets/psql_password
+secrets:
+  psql_user:
+    file: ./postgres/psql_user.txt
+  psql_password:
+    file: ./postgres/psql_password.txt

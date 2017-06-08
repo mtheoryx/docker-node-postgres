@@ -1,0 +1,23 @@
+{
+  "name": "docker-node-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node/index.js",
+  "scripts": {
+    "start": "nodemon -L app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtheoryx/docker-node-postgres.git"
+  },
+  "keywords": ["training"],
+  "author": "David R Poindexter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtheoryx/docker-node-postgres/issues"
+  },
+  "homepage": "https://github.com/mtheoryx/docker-node-postgres#readme",
+  "dependencies": {
+    "pg": "^6.2.3"
+  }
+}
