@@ -1,10 +1,17 @@
+Current working Goal:
+
+Nginx Setup
+Node Setup
+Nginx proxy to node setup
+
+---
 Let's just get a basic nginx container running.
 
 Start by pulling the image. I like to queue up pulling images when I know I'm on
 a fast network.
 
 Also, we'll pull the alpine linux image, since it's much smaller, and we aren't
-goign to do anything too crazy, yet.
+going to do anything too crazy, yet.
 
 ```bash
 docker pull nginx:alpine
@@ -29,12 +36,3 @@ Once you kill that first terminal, the container will stop, and will be destroye
 
 Any changes made while inside the container will be lost. Containers are ephemeral, unless
 explicit data persistence is defined using volumes.
-
-
-
-
-
-
-
-
-
